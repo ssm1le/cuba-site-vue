@@ -154,6 +154,12 @@ a {
   margin: 0;
   transition: all 0.15s;
 }
+.item1:hover,
+.item2:hover,
+.item3:hover,
+.item4:hover {
+  color: #545d82;
+}
 .link1,
 .link2,
 .link3 {
