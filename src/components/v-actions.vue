@@ -65,6 +65,10 @@ export default {
   padding: 20px;
   transition: all 0.15s;
 }
+.items:hover {
+    box-shadow: 0 0 3px rgba(0,0,0,.1);
+    border-radius: 3px;
+}
 @media (max-width: 767px){
 .items {
     width: 50%;
