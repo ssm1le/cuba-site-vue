@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: 'v-caption-text',
+  name: 'v-caption',
   props: {
     text: String
   }

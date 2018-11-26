@@ -24,51 +24,70 @@
 
 <script>
 export default {
-  name: 'v-actions',
-}
+  name: "v-actions"
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .actions {
-    font-size: .8rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    color: #222d5b;
-    margin-top: 30px;
-    margin-left: 32px;
-    margin-right: 32px;
+  font-size: 0.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  color: #222d5b;
+  margin-top: 30px;
+  margin-left: 32px;
+  margin-right: 32px;
+}
+@media (max-width: 767px) {
+  .actions {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}
+@media (max-width: 1023px) {
+  .actions {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
 }
 .items {
-    
-    text-align: center;
-    font-size: 1em;
-    text-decoration: none;
-    color: currentColor;
-    padding: 20px;
-    transition: all .15s;
+  text-align: center;
+  font-size: 1em;
+  text-decoration: none;
+  color: currentColor;
+  padding: 20px;
+  transition: all 0.15s;
 }
-.module1, .module2, .module4 {
-   cursor: pointer; 
+@media (max-width: 767px){
+.items {
+    width: 50%;
+}}
+.module1,
+.module2,
+.module4 {
+  cursor: pointer;
 }
 .items img {
-    width: 20px;
-    height: 20px;
-    fill: currentColor;
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
 }
 
 .header-text {
-    font-weight: 700;
-    margin-bottom: 0;
-    font-family: Podkova,serif;
-    font-size: 18px;
-    color: currentColor;
+  font-weight: 700;
+  margin-bottom: 0;
+  font-family: Podkova, serif;
+  font-size: 18px;
+  color: currentColor;
 }
 .info {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 </style>

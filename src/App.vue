@@ -2,13 +2,16 @@
   <div id="app">
     <main class="container">
       <v-header></v-header>
-      <carousel class="carousel" :autoplay='true' :perPage='1' :navigationEnabled='true'>
+
+      <carousel class="carousel" autoplay='true' perPage='1' navigationEnabled='true' autoplayTimeout="5000">
         <slide class="slide1"></slide>
         <slide class="slide2"></slide>
         <slide class="slide3"></slide>
         <slide class="slide4"></slide>
       </carousel>
+
       <v-actions></v-actions>
+
       <v-caption text="О кубе"></v-caption>
       <p class="info-cuba">
         Russian Lorem ipsum dolor sit amet, veniam expetenda intellegebat quo&nbsp;et, mel ei&nbsp;nostro volutpat facilisis. Pro eros solet ornatus&nbsp;ea. Mel graecis commune maluisset&nbsp;cu, illum iuvaret principes eam&nbsp;in, an&nbsp;qui nisl justo neglegentur. Cum at&nbsp;mentitum accommodare.
@@ -20,14 +23,76 @@
         Duo ei&nbsp;sale nonumes. Qui ad&nbsp;congue admodum. Utroque laoreet similique ei&nbsp;per, altera scripta admodum qui&nbsp;no, ut&nbsp;aliquam molestie ius. Dolore ubique ei&nbsp;mei. Legere viderer vim&nbsp;et. Eum id&nbsp;voluptatum delicatissimi.
         Ne&nbsp;choro nominati vim. An&nbsp;vix omnes feugiat senserit, eos amet patrioque gubergren&nbsp;ei, laboramus conclusionemque nam&nbsp;et. Nec ad&nbsp;veri doming admodum, suas augue movet vix&nbsp;at, in&nbsp;brute reprehendunt mea. Duo ad&nbsp;brute dicit reprimique, malis consetetur an&nbsp;ius.
       </p>
+
       <section class="events">
         <v-caption text="Зажигательные Вечеринки"></v-caption>
         <p class="events-info">
           RU-Mauris finibus cursus justo, sit amet eleifend libero gravida eget.
           Aliquam lobortis, tortor ut lobortis bibendum, urna ante tristique odio, vel vestibulum turpis dolor non libero.
         </p>
+        <div class="photo-collage">
+          <v-card-event css="transform:rotate(5deg)" href="/" caption="Вечер Сальсы" date="25.01.2018" time="20:00">
+            <img src="../public/salsa.jpg" alt="image"/>
+          </v-card-event>
+          <v-card-event css="transform:rotate(-15deg)" href="/" caption="Вечер латины" date="07.07.2018" time="20:00">
+            <img src="../public/latina.jpg" alt="image"/>
+          </v-card-event>
+          <v-card-event css="transform:rotate(2deg)" href="/" caption="Первая суббота лета" date="02.06.2018" time="20:00">
+            <img src="../public/saturday.jpg" alt="image"/>
+          </v-card-event>
+          <v-card-event css="transform:rotate(-9deg)" href="/" caption="Вечер Кубинского Рома" date="24.05.2018" time="20:00">
+            <img src="../public/rome.jpg" alt="image"/>
+          </v-card-event>
+          <v-card-event css="transform:rotate(8deg)" href="/" caption="Зажигательные кубинские танцы" date="19.04.2018" time="20:00">
+            <img src="../public/dancing.jpg" alt="image"/>
+          </v-card-event>
+          <v-card-event css="transform:rotate(-11deg)" href="/" caption="День святого Патрика" date="17.03.2018" time="20:00">
+            <img src="../public/patrick.jpg" alt="image"/>
+          </v-card-event>
+          <v-card-event css="transform:rotate(15deg)" href="/" caption="Танци по случаю середы" date="13.02.2018" time="20:00">
+            <img src="../public/wednesday.jpg" alt="image"/>
+          </v-card-event>
+          <v-card-event css="transform:rotate(-2deg)" href="/" caption="Вечер живой музыки" date="19.04.2018" time="20:00">
+            <img src="../public/music.jpg" alt="image"/>
+          </v-card-event>
+        </div>
       </section>
-      <v-caption text="Вкуснейшие Блюда"></v-caption>
+      
+      <section class="menu">
+        <v-caption text="Вкуснейшие Блюда"></v-caption>
+        <p class="menu-info">
+          RU - Donec vel euismod mi. Phasellus ultricies ex vitae lobortis posuere. Vivamus et augue sodales, cursus nunc ac, porta tellus. Cras quis sem vel enim sagittis feugiat.
+        </p>
+        <div class="photo-collage">
+          <v-card-menu css="transform:rotate(4deg)" href="/" caption="Клубничный дайкири" price="350 руб.">
+            <img src="../public/menu1.jpg" alt="image"/>
+          </v-card-menu>
+          <v-card-menu css="transform:rotate(-15deg)" href="/" caption="Завтрак" price="300 руб.">
+            <img src="../public/menu2.jpg" alt="image"/>
+          </v-card-menu>
+          <v-card-menu css="transform:rotate(2deg)" href="/" caption="Ягодно-свекольный смузи" price="250 руб.">
+            <img src="../public/menu3.jpg" alt="image"/>
+          </v-card-menu>
+          <v-card-menu css="transform:rotate(-9deg)" href="/" caption="Сэндвич с ветчиной" price="295 руб.">
+            <img src="../public/menu4.jpg" alt="image"/>
+          </v-card-menu>
+          <v-card-menu css="transform:rotate(8deg)" href="/" caption="Креветки с овощами" price="400 руб.">
+            <img src="../public/menu5.jpg" alt="image"/>
+          </v-card-menu>
+          <v-card-menu css="transform:rotate(-11deg)" href="/" caption="Конгри или Морос" price="430 руб.">
+            <img src="../public/menu6.jpg" alt="image"/>
+          </v-card-menu>
+          <v-card-menu css="transform:rotate(15deg)" href="/" caption="Кубинское мясное рагу — Ла Кальдоса (La Caldosa)" price="450 руб.">
+            <img src="../public/menu7.jpg" alt="image"/>
+          </v-card-menu>
+          <v-card-menu css="transform:rotate(-2deg)" href="/" caption="Жареные ананасы" price="330 руб.">
+            <img src="../public/menu8.jpg" alt="image"/>
+          </v-card-menu>
+        </div>
+      </section>
+
+      <v-footer></v-footer>
+
     </main>
   </div>
 </template>
@@ -36,6 +101,9 @@
 import vHeader from "./components/v-header.vue";
 import vCaption from "./components/v-caption.vue";
 import vActions from "./components/v-actions.vue";
+import vCardEvent from "./components/v-card-event.vue";
+import vCardMenu from "./components/v-card-menu.vue";
+import vFooter from "./components/v-footer.vue";
 import { Carousel, Slide } from "vue-carousel";
 
 export default {
@@ -45,7 +113,10 @@ export default {
     Carousel,
     Slide,
     vCaption,
-    vActions
+    vActions,
+    vCardEvent,
+    vCardMenu,
+    vFooter
   }
 };
 </script>
@@ -58,30 +129,7 @@ export default {
   margin: 0 auto;
   padding: 0 2.5rem 2.5rem;
 }
-@media (max-width: 1279px) {
-  .carousel {
-    height: 31.25vw;
-  }
-}
-@media (max-width: 1023px) {
-  .container {
-    padding: 0 2rem 2rem;
-  }
-}
-@media (max-width: 767px) {
-  .container {
-    padding: 0 0 1.5rem;
-  }
-  .carousel {
-    margin-top: 60px;
-    padding: 0;
-  }
-}
-@media (max-width: 479px) {
-  .container {
-    padding: 0 0 1rem;
-  }
-}
+
 .carousel {
   width: 100%;
   height: 400px;
@@ -140,6 +188,39 @@ export default {
   -webkit-column-count: 2;
   column-count: 2;
   color: #222d5b;
+  margin-bottom: 50px;
+}
+
+.events-info, .menu-info {
+  width: (100% - 4rem);
+  max-width: 768px;
+  margin: 0 auto 3rem;
+  text-align: center;
+  color: #222d5b;
+}
+
+.photo-collage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  width: calc(100vw - 14rem);
+  margin: 0 calc(-1 * (100vw - 100% - 14rem) / 2);
+}
+.menu {
+    margin: 4rem 0;
+}
+@media (max-width: 1023px){
+  .events-info, .menu-info {
+    width: calc(100% - 4rem);
+    max-width: 100%;
+  }
+  .container {
+    padding: 0 2rem 2rem;
+  }
 }
 @media (max-width: 767px){
   .info-cuba {
@@ -150,25 +231,21 @@ export default {
     column-count: 1;
     color: #222d5b;
   }
-}
-.events-info {
-  width: (100% - 4rem);
-  max-width: 768px;
-  margin: 0 auto 3rem;
-  text-align: center;
-  color: #222d5b;
-}
-
-@media (max-width: 767px){
-  .events-info {
+  .events-info, .menu-info {
     width: calc(100% - 2rem);
     max-width: 100%;
   }
+  .container {
+    padding: 0 0 1.5rem;
+  }
+  .carousel {
+    margin-top: 60px;
+    padding: 0;
+  }
 }
-@media (max-width: 1023px){
-  .events-info {
-    width: calc(100% - 4rem);
-    max-width: 100%;
+@media (max-width: 479px) {
+  .container {
+    padding: 0 0 1rem;
   }
 }
 </style>

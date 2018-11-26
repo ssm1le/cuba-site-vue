@@ -126,52 +126,78 @@ a {
   margin: 0;
 }
 .one {
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 .center {
-    width: 118px;
+  width: 118px;
 }
-.one, .last {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: calc((100% - 118px - 1rem) / 2);
+.one,
+.last {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: calc((100% - 118px - 1rem) / 2);
 }
 .last {
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
-.item1, .item2, .item3, .item4 {
-    font-family: Podkova,serif;
-    font-size: 1.1618rem;
-    margin: 0;
-    transition: all .15s;
+.item1,
+.item2,
+.item3,
+.item4 {
+  font-family: Podkova, serif;
+  font-size: 1.1618rem;
+  margin: 0;
+  transition: all 0.15s;
 }
-.link1, .link2, .link3 {
-    text-decoration: none;
-    color: currentColor;
-    position: relative;
+.link1,
+.link2,
+.link3 {
+  text-decoration: none;
+  color: currentColor;
+  position: relative;
 }
 
-.item2, .item4 {
-    margin-left: 50%;
+.item2,
+.item4 {
+  margin-left: 50%;
 }
 .item4 .locale-select {
-    outline-color: currentColor;
-    border: none;
-    background-color: transparent;
-    color: inherit;
+  outline-color: currentColor;
+  border: none;
+  background-color: transparent;
+  color: inherit;
 }
-@media (max-width: 767px){
+
+@media (max-width: 1023px) {
+  .v-header:before {
+    background-position: top calc(50% + 109px) center;
+  }
+  .logo-block {
+    padding-top: 10rem;
+  }
+}
+@media (max-width: 767px) {
+  .v-header:before {
+    background-position: top calc(50% + 52px) center;
+    height: calc(100% - 90px);
+  }
+  .v-header {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
   .navbar {
     position: static;
     z-index: 9;
     bottom: 2.5rem;
     width: 100%;
   }
+  .logo-block {
+    padding: 2.5rem 16px 0;
+  }
 }
-
 </style>
