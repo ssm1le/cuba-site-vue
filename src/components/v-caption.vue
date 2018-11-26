@@ -44,4 +44,32 @@ h1:after, h1:before, h2:after, h2:before {
   height: .5em;
   display: inline-block;
 }
+
+@media (max-width: 767px){
+  h2 {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    max-width: calc(100% - 3rem);
+    margin: 0 auto 1rem;
+  }
+}
+@media (max-width: 767px){
+h1:before, h2:before {
+    right: -1em;
+}}
+@media (max-width: 767px){
+h1:after, h2:after {
+    left: -1em;
+}}
+
+@media (max-width: 767px){
+h1:after, h1:before, h2:after, h2:before {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin: 0;
+}}
 </style>

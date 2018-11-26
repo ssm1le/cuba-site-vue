@@ -24,51 +24,11 @@
 
 <script>
 export default {
-  name: 'v-actions',
+  name: 'v-card-menu',
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.actions {
-    font-size: .8rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    color: #222d5b;
-    margin-top: 30px;
-    margin-left: 32px;
-    margin-right: 32px;
-}
-.items {
-    
-    text-align: center;
-    font-size: 1em;
-    text-decoration: none;
-    color: currentColor;
-    padding: 20px;
-    transition: all .15s;
-}
-.module1, .module2, .module4 {
-   cursor: pointer; 
-}
-.items img {
-    width: 20px;
-    height: 20px;
-    fill: currentColor;
-}
 
-.header-text {
-    font-weight: 700;
-    margin-bottom: 0;
-    font-family: Podkova,serif;
-    font-size: 18px;
-    color: currentColor;
-}
-.info {
-    margin-bottom: 0;
-}
 </style>
