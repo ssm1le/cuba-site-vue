@@ -14,7 +14,7 @@
     <ul class="navbar">
       <div class="one">
         <li class="item1"><a class="link1" href="/">События</a></li>
-        <li class="item2"><a class="link2" href="/">Меню</a></li>
+        <li class="item2"><a class="link2" href="/menu">Меню</a></li>
       </div>
       <div class="center"></div>
       <div class="last">
