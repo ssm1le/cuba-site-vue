@@ -4,46 +4,46 @@
       <v-header></v-header>
       <ul class="menu-list">
         <li class="menu-item firstline">
-          <v-card-menu-item href="/" caption="Клубничный дайкири" price="350 руб."></v-card-menu-item>
+          <v-card-menu-item href="/" caption="Клубничный дайкири" price="350 руб."><img src="../../public/menu01.jpg" alt="image"></v-card-menu-item>
         </li>
         <li class="menu-item firstline">
-          <v-card-menu-item href="/" caption="Завтрак" price="300 руб."></v-card-menu-item>
+          <v-card-menu-item href="/" caption="Завтрак" price="300 руб."><img src="../../public/menu02.jpg" alt="image"></v-card-menu-item>
         </li>
         <li class="menu-item">
-          <v-card-menu-item href="/" caption="Ягодо-свекольный смузи" price="250 руб."></v-card-menu-item>
+          <v-card-menu-item href="/" caption="Ягодо-свекольный смузи" price="250 руб."><img src="../../public/menu03.jpg" alt="image"></v-card-menu-item>
         </li>
         <li class="menu-item">
-          <v-card-menu-item href="/" caption="Сэндвич с ветчиной" price="295 руб."></v-card-menu-item>
+          <v-card-menu-item href="/" caption="Сэндвич с ветчиной" price="295 руб."><img src="../../public/menu04.jpg" alt="image"></v-card-menu-item>
         </li>
         <li class="menu-item">
-          <v-card-menu-item href="/" caption="Креветки с овозами" price="400 руб."></v-card-menu-item>
+          <v-card-menu-item href="/" caption="Креветки с овозами" price="400 руб."><img src="../../public/menu05.jpg" alt="image"></v-card-menu-item>
         </li>
         <li class="menu-item">
-          <v-card-menu-item href="/" caption="Конгри или Морос" price="430 руб."></v-card-menu-item>
+          <v-card-menu-item href="/" caption="Конгри или Морос" price="430 руб."><img src="../../public/menu06.jpg" alt="image"></v-card-menu-item>
         </li>
         <li class="menu-item">
-          <v-card-menu-item href="/" caption="Кубинское мясное рагу" price="450 руб."></v-card-menu-item>
+          <v-card-menu-item href="/" caption="Кубинское мясное рагу" price="450 руб."><img src="../../public/menu07.jpg" alt="image"></v-card-menu-item>
         </li>
         <li class="menu-item">
-          <v-card-menu-item href="/" caption="Жареные ананасы" price="330 руб."></v-card-menu-item>
+          <v-card-menu-item href="/" caption="Жареные ананасы" price="330 руб."><img src="../../public/menu08.jpg" alt="image"></v-card-menu-item>
         </li>
         <li class="menu-item">
-          <v-card-menu-item href="/" caption="Ветчина по-кубински" price="400 руб."></v-card-menu-item>
+          <v-card-menu-item href="/" caption="Ветчина по-кубински" price="400 руб."><img src="../../public/menu09.jpg" alt="image"></v-card-menu-item>
         </li>
         <li class="menu-item">
-          <v-card-menu-item href="/" caption="Бургер" price="300 руб."></v-card-menu-item>
+          <v-card-menu-item href="/" caption="Бургер" price="300 руб."><img src="../../public/menu010.jpg" alt="image"></v-card-menu-item>
         </li>
         <li class="menu-item">
-          <v-card-menu-item href="/" caption="Виные ребра" price="480 руб."></v-card-menu-item>
+          <v-card-menu-item href="/" caption="Виные ребра" price="480 руб."><img src="../../public/menu011.jpg" alt="image"></v-card-menu-item>
         </li>
         <li class="menu-item">
-          <v-card-menu-item href="/" caption="Тыквенный суп" price="350 руб."></v-card-menu-item>
+          <v-card-menu-item href="/" caption="Тыквенный суп" price="350 руб."><img src="../../public/menu012.jpg" alt="image"></v-card-menu-item>
         </li>
         <li class="menu-item">
-          <v-card-menu-item href="/" caption="Креветки" price="400 руб."></v-card-menu-item>
+          <v-card-menu-item href="/" caption="Креветки" price="400 руб."><img src="../../public/menu013.jpg" alt="image"></v-card-menu-item>
         </li>
         <li class="menu-item">
-          <v-card-menu-item href="/" caption="Бурито" price="350 руб."></v-card-menu-item>
+          <v-card-menu-item href="/" caption="Бурито" price="350 руб."><img src="../../public/menu014.jpg" alt="image"></v-card-menu-item>
         </li>
       </ul>
 
@@ -86,16 +86,16 @@ export default {
   -ms-flex-pack: start;
   justify-content: flex-start;
 }
+.menu-item:first-child, .menu-item:nth-child(2) {
+  width: 50%;
+}
 .menu-item {
     width: 25%;
     margin: 0;
 }
 @media (max-width: 1023px){
-  .container {
-    padding: 0 2rem 2rem;
-  }
-  .menu-item:first-child, .menu-item:nth-child(2) {
-    width: 50%;
+.container {
+  padding: 0 2rem 2rem;
 }
 .menu-item {
     width: 50%;

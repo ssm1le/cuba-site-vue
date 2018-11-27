@@ -13,12 +13,12 @@
     </div>
     <ul class="navbar">
       <div class="one">
-        <li class="item1"><a class="link1" href="/">События</a></li>
+        <li class="item1"><a class="link1" href="/events">События</a></li>
         <li class="item2"><a class="link2" href="/menu">Меню</a></li>
       </div>
       <div class="center"></div>
       <div class="last">
-        <li class="item3"><a class="link3" href="/">Контакты</a></li>
+        <li class="item3"><a class="link3" href="/contacts">Контакты</a></li>
         <li class="item4"><div>
           <select class="locale-select">
             <option value="ru">RU</option>

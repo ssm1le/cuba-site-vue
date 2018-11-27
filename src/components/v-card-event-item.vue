@@ -1,11 +1,11 @@
 <template>
-  <a class="card-menu" :href="'/menu'+href">
+  <a class="card-menu" :href="'/events'+href">
     <div class="image">
       <slot></slot>
     </div>
     <div class="info">
+      <span class="date-event" v-html="date"></span>
       <span class="name" v-html="caption"></span>
-      <span class="price" v-html="price"></span>
     </div>
   </a>
 </template>
@@ -16,7 +16,7 @@ export default {
   props: {
     href: String,
     caption: String,
-    price: String,
+    date: String,
   }
 }
 </script>
@@ -76,7 +76,7 @@ export default {
     display: block;
     font-weight: 700;
 }
-.price {
+.date-event {
     display: block;
 }
 .card-menu:hover {
