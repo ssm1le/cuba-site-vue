@@ -1,11 +1,11 @@
 <template>
-    <a class="event" :href="href" target="_blank">
-        <div class="wrapp" :style="css">
-            <div class="image"><slot></slot></div>
+    <a class="event" :href="menu.href" target="_blank">
+        <div class="wrapp" :style="menu.css">
+            <div class="image"><v-lazy-image :src="menu.src"/></div>
             <div class="info">
-                <div class="name" v-html="caption"></div>
+                <div class="name" v-html="menu.caption"></div>
                 <div class="price-wrapp">
-                    <span v-html="price"></span>
+                    <span v-html="menu.price"></span>
                 </div>
             </div>
         </div>
@@ -16,10 +16,7 @@
 export default {
   name: 'v-card-menu',
   props: {
-    href: String,
-    caption: String,
-    price: String,
-    css: String,
+    menu: String,
   }
 }
 </script>

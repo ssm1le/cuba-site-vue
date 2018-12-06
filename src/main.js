@@ -1,12 +1,14 @@
 import Vue from 'vue'
 import App from './App.vue'
-import VueCarousel from 'vue-carousel';
+import VueCarousel from 'vue-carousel'
 import router from './router'
 import * as VueGoogleMaps from 'vue2-google-maps'
+import { VLazyImagePlugin } from "v-lazy-image";
 
 Vue.config.productionTip = false
-Vue.use(VueCarousel);
 
+Vue.use(VLazyImagePlugin);
+Vue.use(VueCarousel)
 Vue.use(VueGoogleMaps, {
   load: {
     key: 'AIzaSyAg1__ca_pGd4q9Jw9F3yN_f4pVt0PX6pk',

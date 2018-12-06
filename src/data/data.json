@@ -1,0 +1,180 @@
+{
+    "items": [
+        {
+            "href": "/",
+            "caption": "Вечер Сальсы",
+            "date": "25 Января в 20:00",
+            "src": "https://i.imgur.com/0DnriRx.jpg"
+        },
+        {
+            "href": "/",
+            "caption": "Вечер латины",
+            "date": "7 Июля в 20:00",
+            "src": "https://i.imgur.com/LQXTRMx.jpg"
+        },
+        {
+            "href": "/",
+            "caption": "Первая суббота лета",
+            "date": "2 Июня в 20:00",
+            "src": "https://i.imgur.com/tg9Wx6j.jpg"
+        },
+        {
+            "href": "/",
+            "caption": "Вечер Кубинского Рома",
+            "date": "24 Мая в 20:00",
+            "src": "https://i.imgur.com/Gnqv5YH.jpg"
+        },
+        {
+            "href": "/",
+            "caption": "Зажигательные кубинские танцы",
+            "date": "19 Апреля в 20:00",
+            "src": "https://i.imgur.com/JwkUBEl.jpg"
+        },
+        {
+            "href": "/",
+            "caption": "День святого Патрика",
+            "date": "17 Марта в 20:00",
+            "src": "https://i.imgur.com/zMOlwRQ.jpg"
+        },
+        {
+            "href": "/",
+            "caption": "Танцы по случаю среды",
+            "date": "13 Февраля в 20:00",
+            "src": "https://i.imgur.com/l5IFi7f.jpg"
+        },
+        {
+            "href": "/",
+            "caption": "Вечер живой музыки",
+            "date": "19 Апреля в 20:00",
+            "src": "https://i.imgur.com/bMo9Ls2.jpg"
+        },
+        {
+            "href": "/",
+            "caption": "День независимости Кубы",
+            "date": "10 Октября в 20:00",
+            "src": "https://i.imgur.com/Xw7HPwk.jpg"
+        },
+        {
+            "href": "/",
+            "caption": "День взятия казарм Монкада",
+            "date": "26 Июля в 20:00",
+            "src": "https://i.imgur.com/roON82J.jpg"
+        },
+        {
+            "href": "/",
+            "caption": "День рабочих",
+            "date": "1 Мая в 20:00",
+            "src": "https://i.imgur.com/gI7FZ9G.jpg"
+        },
+        {
+            "href": "/",
+            "caption": "Рождество",
+            "date": "7 Января в 20:00",
+            "src": "https://i.imgur.com/BZ0geIK.jpg"
+        },
+        {
+            "href": "/",
+            "caption": "День Святого Валентина",
+            "date": "14 Февраля в 20:00",
+            "src": "https://i.imgur.com/pxtY8bl.jpg"
+        },
+        {
+            "href": "/",
+            "caption": "8 марта",
+            "date": "8 Марта в 20:00",
+            "src": "https://i.imgur.com/MAbegEz.jpg"
+        },
+        {
+            "href": "/",
+            "caption": "Новый год",
+            "date": "31 Декабря в 22:59",
+            "src": "https://i.imgur.com/DUJmnOl.jpg"
+        }
+    ],
+    "list": [
+        {
+            "href": "/",
+            "caption": "Клубничный дайкири",
+            "price": "350 руб.",
+            "src": "https://i.imgur.com/Now6YvD.jpg"
+        },
+        {
+            "href": "/",
+            "caption": "Завтрак",
+            "price": "300 руб.",
+            "src": "https://i.imgur.com/sSXmziN.jpg"
+        },
+        {
+            "href": "/",
+            "caption": "Ягодо-свекольный смузи",
+            "price": "250 руб.",
+            "src": "https://i.imgur.com/kRMY95g.jpg"
+        },
+        {
+            "href": "/",
+            "caption": "Сэндвич с ветчиной",
+            "price": "295 руб.",
+            "src": "https://i.imgur.com/IhiBFTQ.jpg"
+        },
+        {
+            "href": "/",
+            "caption": "Креветки с овозами",
+            "price": "400 руб.",
+            "src": "https://i.imgur.com/6z52uNV.jpg"
+        },
+        {
+            "href": "/",
+            "caption": "Конгри или Морос",
+            "price": "430 руб.",
+            "src": "https://i.imgur.com/1dNTjkk.jpg"
+        },
+        {
+            "href": "/",
+            "caption": "Кубинское мясное рагу",
+            "price": "450 руб.",
+            "src": "https://i.imgur.com/SKb5z7c.jpg"
+        },
+        {
+            "href": "/",
+            "caption": "Жареные ананасы",
+            "price": "330 руб.",
+            "src": "https://i.imgur.com/VZQtkeE.jpg"
+        },
+        {
+            "href": "/",
+            "caption": "Ветчина по-кубински",
+            "price": "400 руб.",
+            "src": "https://i.imgur.com/FchEdcU.jpg"
+        },
+        {
+            "href": "/",
+            "caption": "Бургер",
+            "price": "300 руб.",
+            "src": "https://i.imgur.com/Yp5M3mR.jpg"
+        },
+        {
+            "href": "/",
+            "caption": "Виные ребра",
+            "price": "480 руб.",
+            "src": "https://i.imgur.com/QJ5QwWJ.jpg"
+        },
+        {
+            "href": "/",
+            "caption": "Тыквенный суп",
+            "price": "350 руб.",
+            "src": "https://i.imgur.com/hwyTzlW.jpg"
+        },
+        {
+            "href": "/",
+            "caption": "Креветки",
+            "price": "400 руб.",
+            "src": "https://i.imgur.com/7t6NzxD.jpg"
+        },
+        {
+            "href": "/",
+            "caption": "Бурито",
+            "price": "350 руб.",
+            "src": "https://i.imgur.com/RC8nHd0.jpg"
+        }
+    ]
+}

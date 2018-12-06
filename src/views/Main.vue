@@ -37,78 +37,7 @@
           Aliquam lobortis, tortor ut lobortis bibendum, urna ante tristique odio, vel vestibulum turpis dolor non libero.
         </p>
         <div class="photo-collage">
-          <v-card-event
-            css="transform:rotate(5deg)"
-            href="/"
-            caption="Вечер Сальсы"
-            date="25.01.2018"
-            time="20:00"
-          >
-            <img src="../../public/salsa.jpg" alt="image">
-          </v-card-event>
-          <v-card-event
-            css="transform:rotate(-15deg)"
-            href="/"
-            caption="Вечер латины"
-            date="07.07.2018"
-            time="20:00"
-          >
-            <img src="../../public/latina.jpg" alt="image">
-          </v-card-event>
-          <v-card-event
-            css="transform:rotate(2deg)"
-            href="/"
-            caption="Первая суббота лета"
-            date="02.06.2018"
-            time="20:00"
-          >
-            <img src="../../public/saturday.jpg" alt="image">
-          </v-card-event>
-          <v-card-event
-            css="transform:rotate(-9deg)"
-            href="/"
-            caption="Вечер Кубинского Рома"
-            date="24.05.2018"
-            time="20:00"
-          >
-            <img src="../../public/rome.jpg" alt="image">
-          </v-card-event>
-          <v-card-event
-            css="transform:rotate(8deg)"
-            href="/"
-            caption="Зажигательные кубинские танцы"
-            date="19.04.2018"
-            time="20:00"
-          >
-            <img src="../../public/dancing.jpg" alt="image">
-          </v-card-event>
-          <v-card-event
-            css="transform:rotate(-11deg)"
-            href="/"
-            caption="День святого Патрика"
-            date="17.03.2018"
-            time="20:00"
-          >
-            <img src="../../public/patrick.jpg" alt="image">
-          </v-card-event>
-          <v-card-event
-            css="transform:rotate(15deg)"
-            href="/"
-            caption="Танци по случаю середы"
-            date="13.02.2018"
-            time="20:00"
-          >
-            <img src="../../public/wednesday.jpg" alt="image">
-          </v-card-event>
-          <v-card-event
-            css="transform:rotate(-2deg)"
-            href="/"
-            caption="Вечер живой музыки"
-            date="19.04.2018"
-            time="20:00"
-          >
-            <img src="../../public/music.jpg" alt="image">
-          </v-card-event>
+          <v-card-event v-for="(item, index) in eventsList" :key="index" :events="item"></v-card-event>
         </div>
       </section>
 
@@ -118,65 +47,7 @@
           class="menu-info"
         >RU - Donec vel euismod mi. Phasellus ultricies ex vitae lobortis posuere. Vivamus et augue sodales, cursus nunc ac, porta tellus. Cras quis sem vel enim sagittis feugiat.</p>
         <div class="photo-collage">
-          <v-card-menu
-            css="transform:rotate(4deg)"
-            href="/"
-            caption="Клубничный дайкири"
-            price="350 руб."
-          >
-            <img src="../../public/menu1.jpg" alt="image">
-          </v-card-menu>
-          <v-card-menu css="transform:rotate(-15deg)" href="/" caption="Завтрак" price="300 руб.">
-            <img src="../../public/menu2.jpg" alt="image">
-          </v-card-menu>
-          <v-card-menu
-            css="transform:rotate(2deg)"
-            href="/"
-            caption="Ягодно-свекольный смузи"
-            price="250 руб."
-          >
-            <img src="../../public/menu3.jpg" alt="image">
-          </v-card-menu>
-          <v-card-menu
-            css="transform:rotate(-9deg)"
-            href="/"
-            caption="Сэндвич с ветчиной"
-            price="295 руб."
-          >
-            <img src="../../public/menu4.jpg" alt="image">
-          </v-card-menu>
-          <v-card-menu
-            css="transform:rotate(8deg)"
-            href="/"
-            caption="Креветки с овощами"
-            price="400 руб."
-          >
-            <img src="../../public/menu5.jpg" alt="image">
-          </v-card-menu>
-          <v-card-menu
-            css="transform:rotate(-11deg)"
-            href="/"
-            caption="Конгри или Морос"
-            price="430 руб."
-          >
-            <img src="../../public/menu6.jpg" alt="image">
-          </v-card-menu>
-          <v-card-menu
-            css="transform:rotate(15deg)"
-            href="/"
-            caption="Кубинское мясное рагу — Ла Кальдоса (La Caldosa)"
-            price="450 руб."
-          >
-            <img src="../../public/menu7.jpg" alt="image">
-          </v-card-menu>
-          <v-card-menu
-            css="transform:rotate(-2deg)"
-            href="/"
-            caption="Жареные ананасы"
-            price="330 руб."
-          >
-            <img src="../../public/menu8.jpg" alt="image">
-          </v-card-menu>
+          <v-card-menu v-for="(item, index) in menuList" :key="index" :menu="item"></v-card-menu>
         </div>
       </section>
 
@@ -193,6 +64,7 @@ import vCardEvent from "../components/v-card-event.vue";
 import vCardMenu from "../components/v-card-menu.vue";
 import vFooter from "../components/v-footer.vue";
 import { Carousel, Slide } from "vue-carousel";
+import infoData from "../data/main.json";
 
 export default {
   name: "app",
@@ -205,6 +77,12 @@ export default {
     vCardEvent,
     vCardMenu,
     vFooter
+  },
+  data: () => {
+    return {
+      eventsList: infoData.event,
+      menuList: infoData.menu
+    };
   }
 };
 </script>
@@ -223,35 +101,36 @@ export default {
   height: 400px;
   padding-top: 1rem;
 }
-.VueCarousel-wrapper{
+.VueCarousel-wrapper {
   width: 100%;
   height: 400px;
 }
-.VueCarousel-slide{
+.VueCarousel-slide {
   width: 100%;
   height: 400px;
 }
 .slide1 {
-  background: url('../../public/1.jpg') no-repeat;
+  background: url("../../public/1.jpg") no-repeat;
   background-size: contain;
   background-position: center;
 }
 .slide2 {
-  background: url('../../public/2.jpg') no-repeat;
+  background: url("../../public/2.jpg") no-repeat;
   background-size: contain;
   background-position: center;
 }
 .slide3 {
-  background: url('../../public/3.jpg') no-repeat;
+  background: url("../../public/3.jpg") no-repeat;
   background-size: contain;
   background-position: center;
 }
 .slide4 {
-  background: url('../../public/4.jpg') no-repeat;
+  background: url("../../public/4.jpg") no-repeat;
   background-size: contain;
   background-position: center;
 }
-#home .VueCarousel-navigation-prev, #home .VueCarousel-navigation-next {
+#home .VueCarousel-navigation-prev,
+#home .VueCarousel-navigation-next {
   transform: none;
 }
 #home .VueCarousel-pagination {
@@ -259,10 +138,10 @@ export default {
   bottom: -10%;
 }
 #home .VueCarousel-dot-button {
-  transition: opacity .25s ease-in;
-  opacity: .3;
-  box-shadow: 1px 1px 2px rgba(0,0,0,.9);
-  background: #fff!important;
+  transition: opacity 0.25s ease-in;
+  opacity: 0.3;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
+  background: #fff !important;
   border-radius: 50%;
   width: 8px;
   height: 8px;
@@ -279,7 +158,8 @@ export default {
   margin-bottom: 50px;
 }
 
-.events-info, .menu-info {
+.events-info,
+.menu-info {
   width: (100% - 4rem);
   max-width: 768px;
   margin: 0 auto 3rem;
@@ -299,10 +179,11 @@ export default {
   margin: 0 calc(-1 * (100vw - 100% - 14rem) / 2);
 }
 .menu {
-    margin: 4rem 0;
+  margin: 4rem 0;
 }
-@media (max-width: 1023px){
-  .events-info, .menu-info {
+@media (max-width: 1023px) {
+  .events-info,
+  .menu-info {
     width: calc(100% - 4rem);
     max-width: 100%;
   }
@@ -310,7 +191,7 @@ export default {
     padding: 0 2rem 2rem;
   }
 }
-@media (max-width: 767px){
+@media (max-width: 767px) {
   .info-cuba {
     width: calc(100% - 2rem);
     max-width: 100%;
@@ -319,7 +200,8 @@ export default {
     column-count: 1;
     color: #222d5b;
   }
-  .events-info, .menu-info {
+  .events-info,
+  .menu-info {
     width: calc(100% - 2rem);
     max-width: 100%;
   }

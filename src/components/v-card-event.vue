@@ -1,12 +1,12 @@
 <template>
-    <a class="event" :href="href" target="_blank">
-        <div class="wrapp" :style="css">
-            <div class="image"><slot></slot></div>
+    <a class="event" :href="events.href" target="_blank">
+        <div class="wrapp" :style="events.css">
+            <div class="image"><v-lazy-image :src="events.src"/></div>
             <div class="info">
-                <div class="name" v-html="caption"></div>
+                <div class="name" v-html="events.caption"></div>
                 <div class="date-wrapp">
-                    <span v-html="date"></span>
-                    <span v-html="time"></span>
+                    <span v-html="events.date"></span>
+                    <span v-html="events.time"></span>
                 </div>
             </div>
         </div>
@@ -17,11 +17,7 @@
 export default {
   name: 'v-card-event',
   props: {
-    href: String,
-    caption: String,
-    date: String,
-    time: String,
-    css: String,
+    events: Object,
   }
 }
 </script>

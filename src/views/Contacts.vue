@@ -35,7 +35,7 @@
             <GmapMarker
               :key="index"
               v-for="(m, index) in markers"
-              :position="m.position"
+              :position="currentPlace"
               :clickable="true"
               :draggable="true"
             />
@@ -55,15 +55,14 @@ export default {
   name: "app",
   components: {
     vHeader,
-    vFooter,
+    vFooter
   },
   data() {
     return {
-
       center: { lat: 59.930161, lng: 30.319891 },
-      markers: [{ lat: 45.508, lng: -73.587 }],
+      markers: [1],
       places: [],
-      currentPlace: null
+      currentPlace: { lat: 59.930161, lng: 30.319891 }
     };
   }
 };
@@ -71,8 +70,8 @@ export default {
 
 <style scoped>
 .google-maps {
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 .container {
   width: 100%;
@@ -90,12 +89,12 @@ export default {
   margin-top: 4rem;
   margin-bottom: 4rem;
 }
-@media (max-width: 1023px){
-.container {
-  padding: 0 2rem 2rem;
+@media (max-width: 1023px) {
+  .container {
+    padding: 0 2rem 2rem;
+  }
 }
-}
-@media (max-width: 767px){
+@media (max-width: 767px) {
   .container {
     padding: 0 0 1.5rem;
   }
@@ -105,5 +104,4 @@ export default {
     padding: 0 0 1rem;
   }
 }
-
 </style>

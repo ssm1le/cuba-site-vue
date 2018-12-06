@@ -1,11 +1,11 @@
 <template>
-  <a class="card-menu" :href="'/events'+href">
+  <a class="card-menu" :href="'/events'+event.href">
     <div class="image">
-      <slot></slot>
+      <v-lazy-image :src="event.src" />
     </div>
     <div class="info">
-      <span class="date-event" v-html="date"></span>
-      <span class="name" v-html="caption"></span>
+      <span class="date-event" v-html="event.date"></span>
+      <span class="name" v-html="event.caption"></span>
     </div>
   </a>
 </template>
@@ -14,9 +14,7 @@
 export default {
   name: 'v-card-menu-item',
   props: {
-    href: String,
-    caption: String,
-    date: String,
+    event: Object,
   }
 }
 </script>
