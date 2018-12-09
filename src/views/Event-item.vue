@@ -9,12 +9,10 @@
         <article>
           <div>
             <div class="heading">
-              <h3 class="title">{{event[info].caption}}</h3>
-              <span class="time">{{event[info].date}}</span>
+              <h3 class="title" v-html="event[info].caption"></h3>
+              <span class="time" v-html="event[info].date"></span>
             </div>
-            <div
-              class="description"
-            >Lorem ipsum dolor sit amet, ex equidem percipitur duo. Vidit persius ne pri, ius at graece recusabo. Ad fugit ridens usu. Te nec eripuit voluptua, doming aliquip cum cu. Ex pro zril cetero vituperatoribus.</div>
+            <div v-html="event[info].description" class="description"></div>
           </div>
         </article>
       </section>

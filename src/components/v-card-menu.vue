@@ -1,5 +1,5 @@
 <template>
-    <a class="event" :href="menu.href" target="_blank">
+    <a class="event" :href="'/menu'+menu.href">
         <div class="wrapp" :style="menu.css">
             <div class="image"><v-lazy-image :src="menu.src"/></div>
             <div class="info">
@@ -16,7 +16,7 @@
 export default {
   name: 'v-card-menu',
   props: {
-    menu: String,
+    menu: Object,
   }
 }
 </script>

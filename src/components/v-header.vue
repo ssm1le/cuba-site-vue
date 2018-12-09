@@ -55,6 +55,7 @@ export default {
   top: 0;
   margin-left: calc((100vw - 100%) / 2 * -1);
   z-index: -1;
+  box-sizing: border-box;
 }
 .logo-block {
   height: 100%;

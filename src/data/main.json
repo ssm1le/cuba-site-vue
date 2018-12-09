@@ -2,7 +2,7 @@
     "event": [
         {
             "css": "transform:rotate(5deg)",
-            "href": "/",
+            "href": "/0",
             "caption": "Вечер Сальсы",
             "date": "25.01.2018",
             "time": "20:00",
@@ -10,7 +10,7 @@
         },
         {
             "css": "transform:rotate(-15deg)",
-            "href": "/",
+            "href": "/1",
             "caption": "Вечер латины",
             "date": "07.07.2018",
             "time": "20:00",
@@ -18,7 +18,7 @@
         },
         {
             "css": "transform:rotate(2deg)",
-            "href": "/",
+            "href": "/2",
             "caption": "Первая суббота лета",
             "date": "02.06.2018",
             "time": "20:00",
@@ -26,7 +26,7 @@
         },
         {
             "css": "transform:rotate(-9deg)",
-            "href": "/",
+            "href": "/3",
             "caption": "Вечер Кубинского Рома",
             "date": "24.05.2018",
             "time": "20:00",
@@ -34,7 +34,7 @@
         },
         {
             "css": "transform:rotate(8deg)",
-            "href": "/",
+            "href": "/4",
             "caption": "Зажигательные кубинские танцы",
             "date": "19.04.2018",
             "time": "20:00",
@@ -42,7 +42,7 @@
         },
         {
             "css": "transform:rotate(-11deg)",
-            "href": "/",
+            "href": "/5",
             "caption": "День святого Патрика",
             "date": "17.03.2018",
             "time": "20:00",
@@ -50,7 +50,7 @@
         },
         {
             "css": "transform:rotate(15deg)",
-            "href": "/",
+            "href": "/6",
             "caption": "Танци по случаю середы",
             "date": "13.02.2018",
             "time": "20:00",
@@ -58,7 +58,7 @@
         },
         {
             "css": "transform:rotate(-2deg)",
-            "href": "/",
+            "href": "/7",
             "caption": "Вечер живой музыки",
             "date": "19.04.2018",
             "time": "20:00",
@@ -68,56 +68,56 @@
     "menu": [
         {
             "css": "transform:rotate(4deg)",
-            "href": "/",
+            "href": "/0",
             "caption": "Клубничный дайкири",
             "price": "350 руб.",
             "src": "https://i.imgur.com/yYM9dvm.jpg"
         },
         {
             "css": "transform:rotate(-15deg)",
-            "href": "/",
+            "href": "/1",
             "caption": "Завтрак",
             "price": "300 руб.",
             "src": "https://i.imgur.com/YWykmAc.jpg"
         },
         {
             "css": "transform:rotate(2deg)",
-            "href": "/",
+            "href": "/2",
             "caption": "Ягодно-свекольный смузи",
             "price": "250 руб.",
             "src": "https://i.imgur.com/q1Q0la0.jpg"
         },
         {
             "css": "transform:rotate(-9deg)",
-            "href": "/",
+            "href": "/3",
             "caption": "Сэндвич с ветчиной",
             "price": "295 руб.",
             "src": "https://i.imgur.com/7nRoaAe.jpg"
         },
         {
             "css": "transform:rotate(8deg)",
-            "href": "/",
+            "href": "/4",
             "caption": "Креветки с овощами",
             "price": "400 руб.",
             "src": "https://i.imgur.com/vL5Pbgl.jpg"
         },
         {
             "css": "transform:rotate(-11deg)",
-            "href": "/",
+            "href": "/5",
             "caption": "Конгри или Морос",
             "price": "430 руб.",
             "src": "https://i.imgur.com/vG0vRPZ.jpg"
         },
         {
             "css": "transform:rotate(15deg)",
-            "href": "/",
+            "href": "/6",
             "caption": "Кубинское мясное рагу — Ла Кальдоса (La Caldosa)",
             "price": "450 руб.",
             "src": "https://i.imgur.com/Zl78hxu.jpg"
         },
         {
             "css": "transform:rotate(-2deg)",
-            "href": "/",
+            "href": "/7",
             "caption": "Жареные ананасы",
             "price": "330 руб.",
             "src": "https://i.imgur.com/FBLjgMy.jpg"

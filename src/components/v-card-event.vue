@@ -1,5 +1,5 @@
 <template>
-    <a class="event" :href="events.href" target="_blank">
+    <a class="event" :href="'/events'+events.href">
         <div class="wrapp" :style="events.css">
             <div class="image"><v-lazy-image :src="events.src"/></div>
             <div class="info">
