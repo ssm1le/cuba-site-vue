@@ -122,5 +122,11 @@
             "price": "330 руб.",
             "src": "https://i.imgur.com/FBLjgMy.jpg"
         }
+    ],
+    "gallery": [
+        "https://i.imgur.com/VcPNqeq.jpg",
+        "https://i.imgur.com/syu6GWn.jpg",
+        "https://i.imgur.com/kaZXKyN.jpg",
+        "https://i.imgur.com/bgeTYLi.jpg"
     ]
 }

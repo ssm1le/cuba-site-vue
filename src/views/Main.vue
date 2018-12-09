@@ -10,10 +10,9 @@
         :navigationEnabled="true"
         :autoplayTimeout="5000"
       >
-        <slide class="slide1"></slide>
-        <slide class="slide2"></slide>
-        <slide class="slide3"></slide>
-        <slide class="slide4"></slide>
+        <slide v-for="(slide,index) in gallery" :key="index">
+          <v-lazy-image :src="slide"/>
+        </slide>
       </carousel>
 
       <v-actions></v-actions>
@@ -81,7 +80,8 @@ export default {
   data: () => {
     return {
       eventsList: infoData.event,
-      menuList: infoData.menu
+      menuList: infoData.menu,
+      gallery: infoData.gallery
     };
   }
 };
@@ -108,26 +108,6 @@ export default {
 .VueCarousel-slide {
   width: 100%;
   height: 400px;
-}
-.slide1 {
-  background: url("../../public/1.jpg") no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-.slide2 {
-  background: url("../../public/2.jpg") no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-.slide3 {
-  background: url("../../public/3.jpg") no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-.slide4 {
-  background: url("../../public/4.jpg") no-repeat;
-  background-size: contain;
-  background-position: center;
 }
 #home .VueCarousel-navigation-prev,
 #home .VueCarousel-navigation-next {
