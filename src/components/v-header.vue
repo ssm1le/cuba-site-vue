@@ -1,11 +1,11 @@
 <template>
   <div class="v-header">
     <div class="logo-block">
-      <a href="/" class="logo_wrappery">
+      <a @click="$router.push('/')" class="logo_wrappery">
         <div class="first">
           <div class="second">
             <div class="third">
-                <img src="../../public/logo_cuba.svg" class="logo" alt="logo"/>
+              <img src="../../public/logo_cuba.svg" class="logo" alt="logo">
             </div>
           </div>
         </div>
@@ -13,17 +13,26 @@
     </div>
     <ul class="navbar">
       <div class="one">
-        <li class="item1"><a class="link1" href="/events">События</a></li>
-        <li class="item2"><a class="link2" href="/menu">Меню</a></li>
+        <li class="item1">
+          <a class="link1" @click="$router.push('/events')">События</a>
+        </li>
+        <li class="item2">
+          <a class="link2" @click="$router.push('/menu')">Меню</a>
+        </li>
       </div>
       <div class="center"></div>
       <div class="last">
-        <li class="item3"><a class="link3" href="/contacts">Контакты</a></li>
-        <li class="item4"><div>
-          <select class="locale-select">
-            <option value="ru">RU</option>
-            <option value="en">EN</option>
-          </select></div></li>
+        <li class="item3">
+          <a class="link3" @click="$router.push('/contacts')">Контакты</a>
+        </li>
+        <li class="item4">
+          <div>
+            <select class="locale-select">
+              <option value="ru">RU</option>
+              <option value="en">EN</option>
+            </select>
+          </div>
+        </li>
       </div>
     </ul>
   </div>

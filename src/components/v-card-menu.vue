@@ -1,5 +1,5 @@
 <template>
-    <a class="event" :href="'/menu'+menu.href">
+    <a class="event" @click="$router.push('/menu'+menu.href)">
         <div class="wrapp" :style="menu.css">
             <div class="image"><v-lazy-image :src="menu.src"/></div>
             <div class="info">

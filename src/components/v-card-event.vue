@@ -1,5 +1,5 @@
 <template>
-    <a class="event" :href="'/events'+events.href">
+    <a class="event" @click="$router.push('/events'+event.href)">
         <div class="wrapp" :style="events.css">
             <div class="image"><v-lazy-image :src="events.src"/></div>
             <div class="info">
