@@ -62,6 +62,9 @@ export default {
 .description {
   margin-top: 0.5rem;
 }
+.price {
+  font-weight: 700;
+}
 img {
   max-width: 100%;
   margin: 0 0 1.45rem;

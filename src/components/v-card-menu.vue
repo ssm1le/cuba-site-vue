@@ -28,9 +28,6 @@ export default {
     text-decoration: none;
 }
 
-element.style {
-    transform: rotate(2deg);
-}
 .wrapp {
     min-width: 100%;
     transition: -webkit-transform .15s ease,-webkit-filter .15s ease;

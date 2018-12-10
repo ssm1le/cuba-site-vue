@@ -192,7 +192,12 @@ export default {
     margin-top: 60px;
     padding: 0;
   }
+  #home .VueCarousel-pagination {
+    position: absolute;
+    bottom: -2%;
 }
+}
+
 @media (max-width: 479px) {
   .container {
     padding: 0 0 1rem;
