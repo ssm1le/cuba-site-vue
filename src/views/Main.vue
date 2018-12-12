@@ -3,13 +3,7 @@
     <main class="container">
       <v-header></v-header>
 
-      <carousel
-        class="carousel"
-        :autoplay="true"
-        :perPage="1"
-        :navigationEnabled="true"
-        :autoplayTimeout="5000"
-      >
+      <carousel class="carousel" :perPage="1" :navigationEnabled="true">
         <slide v-for="(slide,index) in gallery" :key="index">
           <v-lazy-image :src="slide"/>
         </slide>
@@ -195,7 +189,7 @@ export default {
   #home .VueCarousel-pagination {
     position: absolute;
     bottom: -2%;
-}
+  }
 }
 
 @media (max-width: 479px) {
